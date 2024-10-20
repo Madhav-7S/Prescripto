@@ -15,12 +15,21 @@ const Navbar = () => {
   };
   return (
     <div className="flex items-center justify-between text-sm py-4 mb-5 border-b-gray-400 border-b">
-      <img
-        onClick={() => navigate("/")}
-        className="w-44 cursor-pointer "
-        src={assets.logo}
-        alt=""
-      />
+      <div className="flex ">
+        <img
+          onClick={() => navigate("/")}
+          className="w-44 cursor-pointer "
+          src={assets.logo}
+          alt=""
+        />
+        <a
+          href="https://prescripto-admin-thr0.onrender.com"
+          target="_blank"
+          className="text-sm text-gray-800 font-medium border border-gray-500 rounded-full pt-2 py-0 px-2 ml-3 py-0"
+        >
+          Admin
+        </a>
+      </div>
 
       <ul className="hidden md:flex items-start gap-5 font-medium">
         <NavLink to="/">
